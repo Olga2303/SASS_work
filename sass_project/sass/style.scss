@@ -1,0 +1,31 @@
+@import "./variables.scss";
+
+
+
+#Hed {
+    width: $width;
+    height: 200px;
+    background-color:$color;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    button {
+        width: 100px;
+        height: 80px;
+        display: inline-block;
+        font-size: 50px;
+        box-shadow: $boxShadow;
+        border: 2px solid rgb(104, 122, 68);
+        border-radius: 10px;
+        .decor button {
+            transition-duration: 1s;
+            transition-delay: 0,5s;
+        }
+    }
+    .decor {
+        position: relative;
+        display: inline-block;
+    }
+    .decor button:hover {background-color:rgba(235, 69, 28, 0.733); border-radius:25px;} ;
+}
